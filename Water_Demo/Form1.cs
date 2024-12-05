@@ -25,8 +25,6 @@ namespace Water_Demo
             picGas.Visible = false;
             picIce.Visible = false;
             picTemparatureText.Visible = true;
-
-
         }
 
         private void btnFormofWater_Click(object sender, EventArgs e)
@@ -57,8 +55,7 @@ namespace Water_Demo
                 picTemparatureText.Visible = false;
                 picGas.Visible = false;
                 picWater.Visible = false;
-            }
-           
+            }           
         }
 
         private void btnClear_Click(object sender, EventArgs e)
@@ -71,8 +68,7 @@ namespace Water_Demo
             picTemparatureText.Visible = true;
 
             txtEnterTemparature.Select();*/
-
-
+            
             if (MessageBox.Show("All Data Clear....", "Clear", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
             {
                 txtEnterTemparature.Text = "";
@@ -93,7 +89,6 @@ namespace Water_Demo
             {
                 Application.Exit();
             }
-
         }
 
         private void txtEnterTemparature_KeyPress(object sender, KeyPressEventArgs e)
@@ -101,14 +96,10 @@ namespace Water_Demo
 
             if (e.KeyChar == (char)Keys.Enter)
             {
-
                // btnFormofWater.Select();
-
-              
+               
                 num = float.Parse(txtEnterTemparature.Text);
-              
-                
-
+            
                 if (num > 100)
                 {
                     picGas.Visible = true;
@@ -131,15 +122,8 @@ namespace Water_Demo
                     picTemparatureText.Visible = false;
                     picGas.Visible = false;
                     picWater.Visible = false;
-                }
-
-                
-            
+                }                            
             }
-        }
-
-       
-    
-       
+        }       
     }
 }
