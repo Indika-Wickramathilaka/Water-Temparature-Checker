@@ -1,0 +1,66 @@
+# Ignore build output directories
+[Bb]in/
+[Oo]bj/
+
+# Ignore user-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Ignore temporary and log files
+*.tmp
+*.log
+*.tlog
+*.ide
+*.log.*
+
+# Ignore NuGet packages
+*.nupkg
+packages/
+
+# Ignore compiled DLLs and executable files
+*.dll
+*.exe
+*.app
+*.so
+*.dylib
+
+# Ignore database files
+*.mdf
+*.ldf
+*.ndf
+
+# Ignore Test Results
+TestResults/
+*.trx
+*.coverage
+
+# Ignore IDE-specific files
+.vs/
+.vscode/
+
+# Ignore configuration files for Rider or Resharper
+.idea/
+_ReSharper*/
+*.DotSettings.user
+
+# Ignore other auto-generated files
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Ignore backup and report files
+*.bak
+*.csv
+*.json
+*.xml
+*.patch
+*.diff
+
+# Ignore style analyzer cache
+StyleCop.Cache
+
+# Ignore temporary build artifacts and publish output
+wwwroot/
+publish/
